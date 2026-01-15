@@ -2,7 +2,7 @@
 
 ## The Question
 
-At the latency of a deep-narrow network (80 layers, 576 hidden, ~321M params like Baguettotron), how much wider and shallower can we go to get the **same latency** but with **many more parameters**?
+At the latency of a deep-narrow network (80 layers, 576 hidden, ~321M params like [Baguettotron](https://huggingface.co/PleIAs/Baguettotron)), how much wider and shallower can we go to get the **same latency** but with **many more parameters**?
 
 ## What We Found
 
