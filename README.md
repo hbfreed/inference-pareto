@@ -20,14 +20,14 @@ At the latency of a deep-narrow network (80 layers, 576 hidden, ~321M params lik
 
 ## Real-World Comparison: Baguettotron vs Gemma 3 12B
 
-To validate this isn't just a synthetic result, we compared Baguettotron's architecture against Gemma 3 12B:
+We benchmarked the actual models from HuggingFace (512 prompt tokens, 100 generated tokens):
 
-| Model        | Layers | Hidden | Params  | Total Time | Decode   |
-|--------------|--------|--------|---------|------------|----------|
-| Baguettotron | 80     | 576    | 0.32B   | 5.65s      | 54.3ms   |
-| Gemma 3 12B  | 48     | 3840   | 10.87B  | 3.64s      | 35.2ms   |
+| Model        | Params  | Total Time | ms/token |
+|--------------|---------|------------|----------|
+| Baguettotron | 0.32B   | 9.98s      | 99.8ms   |
+| Gemma 3 12B  | 12.19B  | 8.86s      | 88.6ms   |
 
-**Gemma 3 12B has 34x more parameters but is 1.55x faster!**
+**Gemma 3 12B has 38x more parameters and is still faster!**
 
 The extreme depth of Baguettotron (80 layers) creates a sequential bottleneck that dominates inference time, despite having far fewer parameters.
 

@@ -10,6 +10,8 @@ dependencies = [
     "pandas",
     "numpy",
     "tqdm",
+    "accelerate>=1.12.0",
+    "hf-transfer>=0.1.9",
 ]
 
 [project.scripts]

@@ -1,0 +1,3 @@
+name,model_id,param_count,total_time_ms,decode_ms_per_token
+Baguettotron,PleIAs/Baguettotron,320956992,9980.256036331411,99.80256036331411
+Gemma-3-12B,google/gemma-3-12b-it,12187325040,8864.933848652678,88.64933848652677
